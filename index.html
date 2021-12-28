@@ -118,7 +118,9 @@
             <form class="form1">
             <input class="un " type="text" align="center" placeholder="ID" id="ID">
             <input class="pass" type="password" align="center" placeholder="Password" id="PASS">
-            <a class="submit" align="center" onclick="sendMessage()">Sign-up</a>      
+            <a class="submit" align="center" onclick="sendMessage()">Sign-up</a>
+            </form>
+            <p id="Change"></p>
         </div>
     </body>
     <script>
@@ -137,6 +139,8 @@
             }
     
             request.send(JSON.stringify(params));
+            
+            document.getElementById("Change").innerHTML = "Account Created!"
         }
     </script>
 </html>
